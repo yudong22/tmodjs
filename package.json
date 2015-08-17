@@ -1,8 +1,8 @@
 {
-    "name": "tmodjs",
-    "version": "1.0.2",
+    "name": "freemodjs",
+    "version": "1.0.0",
     "readmeFilename": "README.md",
-    "description": "Template Compiler",
+    "description": "Template Compiler, support java template freemark version",
     "homepage": "https://github.com/aui/tmodjs",
     "keywords": [
         "template",

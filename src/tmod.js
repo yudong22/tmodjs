@@ -1107,7 +1107,6 @@ Tmod.prototype = {
     _initEngine: function () {
         var options = this.options;
         var template;
-
         switch (String(options.syntax)) {
             case 'native':
                 template = require('./syntax/native.js');
@@ -1141,7 +1140,12 @@ Tmod.prototype = {
 
                 }   
         }
+        if (options.openTag) {
+            template.config("openTag",options.openTag);
+            template.config("closeTag",options.closeTag);
+        }
 
+        // console.log("template",template)
 
         // 配置模板引擎：辅助方法
         if (options.helpers) {
